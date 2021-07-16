@@ -46,6 +46,6 @@ Output:
 */
 
 export function makeSpanishLanguageArray(arr) {
-    return [];
+    return arr.map(perro => { return {nombre: perro.name, tipo: perro.type} });
 }
 
