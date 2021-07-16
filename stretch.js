@@ -109,5 +109,9 @@ Output:
 */
 
 export function countByCategory(arr) {
-    return {};
+    let myObject = {};
+    arr.forEach(item => {
+        myObject[item.category] = arr.filter(food => food.category === item.category).length;
+    });
+    return myObject;
 }
