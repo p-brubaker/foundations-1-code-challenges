@@ -38,7 +38,9 @@ Output:
 */
 
 export function makeMoreScreamingKeys(someObject) {
-    return {};
+    let myObject = {};
+    Object.keys(someObject).forEach((key) => myObject[key.toUpperCase()] = someObject[key] );
+    return myObject;
 }
 
 /*
@@ -51,5 +53,7 @@ Output:
 */
 
 export function makeTuples(someObject) {
-    return [];
+    let myArray = [];
+    Object.keys(someObject).forEach(key => myArray.push([key, someObject[key]]));
+    return myArray;
 }
