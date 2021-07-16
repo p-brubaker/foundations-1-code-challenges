@@ -19,7 +19,7 @@ Output:
 */
 
 export function makeArrayOfNamesWithMap(arr) {
-    return [];
+    return arr.map(dog => dog.name);
 }
 
 /*
