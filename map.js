@@ -58,7 +58,7 @@ Output:
 */
 
 export function makeStringArray(arr) {
-    return [];
+    return arr.map(animal => `${animal.name}${animal.type}`);
 }
 
 /*
