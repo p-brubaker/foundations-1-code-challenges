@@ -84,7 +84,7 @@ Output:
 */
 
 export function findTheCheese(arr) {
-    return [];
+    return arr.filter(food => food.id === 'cheese')[0];
 }
 
 
