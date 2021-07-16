@@ -33,7 +33,7 @@ Output:
 ]*/
 
 export function makeArrayWithIsHungry(arr) {
-    return [];
+    return arr.map(dog => { return {name: dog.name, isHungry: true, type: dog.type}});
 }
 
 /*
