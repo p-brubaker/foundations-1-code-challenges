@@ -28,7 +28,10 @@ Output:
 */
 
 export function makeReversedArrayOfTypes(arr) {
-    return [];
+    let animals = [];
+    console.log(arr);
+    arr.forEach(animal => animals.unshift(animal.type));
+    return animals;
 }
 
 /*
