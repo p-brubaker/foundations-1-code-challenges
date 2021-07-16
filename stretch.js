@@ -50,7 +50,10 @@ Output:
 */
 
 export function organizePricesByKey(arr) {
-    return {};
+    let myObject = {};
+    console.log(arr[0].price);
+     arr.forEach(object => myObject[object.id] = object.price);
+     return myObject;
 }
 
 /*
